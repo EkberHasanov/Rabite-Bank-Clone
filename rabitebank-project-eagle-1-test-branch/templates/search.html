@@ -1,0 +1,19 @@
+{% extends "base.html" %}
+
+{% block css %}
+    <title>Axtarış</title>
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <h1>Hello this is a search page</h1>
+    <p><b>{{ searched }}</b> sozune uygun <b>{{news|length}}</b> netice tapildi</p>
+    <br>
+    {% for news_var in news%}
+    <a href="/xeber/{{news_var.id}}">{{news_var.title}}</a>
+    <br>
+    <br>
+    {% endfor %}
+</div>
+{% endblock %}
+

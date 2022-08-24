@@ -1,0 +1,237 @@
+{% extends 'base.html' %}
+
+{% block css%}
+
+<title>Əmanət ətraflı </title>
+
+{%endblock%}
+
+{% block content%}
+
+    <main class="amanat">
+        <div class="amanat-inside-top">
+            <div>
+                <div>
+                    <h3>Universal Əmanət</h3>
+                    <div class="amanat-inside-top-text">
+                        <div>
+                            <p>Müddət:</p>
+                            <p>36 ayadək</p>
+                        </div>
+                        <div>
+                            <p>Faiz dərəcəsi:</p>
+                            <p>10.50 %-dək</p>
+                        </div>
+                        <div>
+                            <p>Valyuta:</p>
+                            <p>AZN/EUR/USD</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <img src="https://www.rabitabank.com/uploads/posts/2021/06/universal%20amanat%20kampaniya.png" alt="">
+            </div>
+        </div>
+        <div>
+            <p>Universal Əmanət məhsulu ilə pulunuz artmaqla yanaşı həm də qazanılan faizlərin götürülməsində geniş seçim imkanınız olacaq.</p>
+        </div>
+        <div>
+
+        </div>
+        <div class="amanat-inside-center">
+            <h3>“Universal əmanət” Sizə əmanətin şərtlərini sərbəst şəkildə seçmək imkanı verir.</h3>
+            <p>Siz əmanətin faizlərini və müddətini geniş seçim imkanlarından yararlanaraq müəyyən edə bilərsiniz.
+            </p>
+            <div class="amanat-inside-flex-container">
+                <div class="amanat-inside-table">
+                    <table class="table table-hover">
+                       <tr>
+                            <td>Əmanətin Valyutası</td>
+                            <td>AZN/USD/EUR</td>
+                       </tr>
+                       <tr>
+                            <td>Əmanətin Minimal Məbləği</td>
+                            <td>200 AZN - USD/ 500 EUR</td>
+                       </tr>
+                       <tr>
+                            <td>Əmanətin Maksimal Məbləği</td>
+                            <td>Yoxdur</td>
+                       </tr>
+                       <tr>
+                            <td>Faizlərin Ödənilməsi</td>
+                            <td>Aylıq, Rüblük, Müddətin Sonunda</td>
+                       </tr>
+                       <tr>
+                            <td>Əmanətin Artırılması</td>
+                            <td>Mümkün Deyil</td>
+                       </tr> 
+                    </table>
+                </div>
+                <div>
+                    <p><b>Müddətin uzadılması:</b>
+                        Əmanət müddəti qurtardıqdan sonra ertəsi gün əmanətçi əmanətin qaytarılmasını tələb etmədikdə həmin dövrdəki tarif və şərtlərdə eyni əmanət şərtləri mövcud olduğu halda həmin şərtlərlə, digər bütün hallarda isə Bankın birtərəfli qaydada müəyyən etdiyi şərtlərlə uzadılır. (hesablanmış faizlər əmanət məbləğinin üzərinə əlavə olunmur).</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form action="">
+                <div class="order-form">
+                    <h4>Əmanət Kalkulyatoru</h4>
+                    <div class="order-form-content">
+                        <div>
+                            <p>
+                            <select name="" id="">
+                                <option selected disabled value="">Faizlərin Hesablanması</option>
+                                <option value="1">Aylıq</option>
+                                <option value="2">Rüblük</option>
+                                <option value="3">Müddətin sonunda</option>
+                            </select>
+                            </p>
+
+
+                            <p>
+                                <select name="" id="mounth">
+                                    <option selected disabled value="3">Müddət</option>
+                                    <option value="3">3 ay</option>
+                                    <option value="6">6 ay</option>
+                                    <option value="12">12 ay</option>
+                                    <option value="24">24 ay</option>
+                                </select>
+                            </p>
+
+                            <p>
+                                <select name="" id="precentage">
+                                    <option selected disabled value="3">Faiz dərəcəsi</option>
+                                    <option value="3">3%</option>
+                                    
+                                </select>
+                            </p>
+                        </div>
+                        <div>
+                            <p>
+                            <select name="" id="valyuta">
+                                <option disabled value="AZN">Valyuta</option>
+                                <option value="AZN">AZN</option>
+                                <option value="USD">USD</option>
+                                <option value="EUR">EUR</option>
+                            </select>
+                            </p>
+                            <p>
+                                <input id = "start-money" type="text" value="200" placeholder="Əmanət Məbləği">
+                            </p>
+                        </div>
+                    </div>
+                    <div class="amanat-inside-end">
+                        <div id = "res1">
+                            <p>Əldə olunan gəlir</p>
+                            <p><b>1.50</b><span>AZN</span></p>
+                        </div>
+                        <div id ="res2">
+                            <p>Yekun məbləğ</p>
+                            <p><b>201.50</b><span>AZN</span></p>
+                        </div>
+                    </div>
+            </form>
+        </div>
+        <div class="company-cards">
+            <div class="company-card">
+                <div class="company-card-content">
+                    <p>Fərdi</p>
+                    <h5>Nağd pul krediti üzrə kampaniya</h5>
+                    <p><a href="#"><button>Daha ətraflı</button></a></p>
+                </div>
+                <div class="company-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2022/04/bannerrrr.png" alt="">
+                </div>
+            </div>
+
+            <div class="company-card">
+                <div class="company-card-content">
+                    <p>Fərdi</p>
+                    <h5>Lombard krediti üzrə Kampaniya</h5>
+                    <p><a href="#"><button>Daha ətraflı</button></a></p>
+                </div>
+                <div class="company-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2022/02/lombard%20kampaniya.png" alt="">
+                </div>
+            </div>
+
+
+            
+            <div class="company-card">
+                <div class="company-card-content">
+                    <p>Fərdi</p>
+                    <h5>Faizsiz Avans</h5>
+                    <p><a href="#"><button>Daha ətraflı</button></a></p>
+                </div>
+                <div class="company-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/10/esas.png" alt="">
+                </div>
+            </div>
+            
+
+
+        </div>
+    </div>
+    <div>
+        <div class="amanat-coursel">
+            <div class="amanat-coursel-content">
+                <div class="amanat-coursel-text">
+                    <div>
+                        <h2>Rabita Mobile</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                        <p><a href=""><button class="">Davam et</button></a></p>
+                    </div>
+                </div>
+                <div class="amanat-coursel-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/04/11.png" alt="">
+                </div>    
+            </div>
+            <div class="amanat-coursel-content">
+                <div class="amanat-coursel-text">
+                    <div>
+                        <h2>RabitaBot</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                        <p><a href=""><button class="">Davam et</button></a></p>
+                    </div>
+                </div>
+                <div class="amanat-coursel-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/04/33.png" alt="">
+                </div>    
+            </div>
+            <div class="amanat-coursel-content">
+                <div class="amanat-coursel-text">
+                    <div>
+                        <h2>Rabita Banking</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                        <p><a href=""><button class="">Davam et</button></a></p>
+                    </div>
+                </div>
+                
+                <div class="amanat-coursel-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/04/22.png" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+{% endblock %}
+
+
+{% block js%}
+<script type="text/javascript" src="{{url_for('static',filename = 'js/amanat-calc.js')}}"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script type="text/javascript" src="{{url_for('static',filename = 'slick/slick.min.js')}}"></script>
+<script>
+    $('.amanat-coursel').slick({
+        dots: true,
+        infinite: true,
+        speed: 500,
+        slidesToShow: 1,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        adaptiveHeight: true,
+        pauseOnHover: false
+      });
+</script>
+{%endblock%}

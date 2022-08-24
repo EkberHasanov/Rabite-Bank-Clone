@@ -1,0 +1,111 @@
+
+{% extends 'base.html'%}
+{% block css%}
+    <title>Kampaniyalar</title>
+{%endblock%}
+
+{%block content%}
+    <main class="company">
+        <div class="company-top">
+            <div>
+                <h2>Kampaniyalar</h2>
+                <p>Rabitəbank müştərilərini düşünərək, daim yenilik və kampaniyalarla onları sevindirir.</p>
+            </div>
+            <div>
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/03/speaker.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div class="company-menu">
+                <ul>
+                    <li><a class="company-active-link" href="#">Bütün kompaniyalar</a></li>
+                    <li><a href="#">Kredit</a></li>
+                    <li><a href="#">Əmanətlər</a></li>
+                    <li><a href="#">Daşınmaz Əmlak</a></li>
+                    <li><a href="#">Biznesin İnkişafı</a></li>
+                    <li><a href="#">Tikinti</a></li>
+                    <li><a href="#">Nəqliyyat və avandanlıq</a></li>
+                    <li><a href="#">Kart</a></li>
+                </ul>
+            </div>
+        </div>
+        <div>
+            <div class="company-cards">
+                {%for comp in companies %}    
+                    <div class="company-card">
+                        <div class="company-card-content">
+                            <p>Fərdi</p>
+                            <h5>{{comp.name}}</h5>
+                            <p><a href="#"><button>Daha ətraflı</button></a></p>
+                        </div>
+                        <div class="company-card-img">  
+                            <img src="{{comp.img_url}}" alt="">
+                        </div>
+                    </div>
+                {%endfor%}
+            </div>
+        </div>
+        <div>
+            <div class="amanat-coursel">
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>Rabita Mobile</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/11.png" alt="">
+                    </div>    
+                </div>
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>RabitaBot</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/33.png" alt="">
+                    </div>    
+                </div>
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>Rabita Banking</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/22.png" alt="">
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </div>
+        
+    </main>
+{%endblock%}
+
+{%block js%}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/slick/slick.min.js"></script>
+
+    <script>
+        $('.amanat-coursel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true,
+            pauseOnHover: false
+          });
+    </script>
+{% endblock%}

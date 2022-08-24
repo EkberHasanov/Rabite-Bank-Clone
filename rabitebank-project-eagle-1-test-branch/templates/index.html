@@ -1,0 +1,358 @@
+{% extends 'base.html' %}
+    {% block css %}
+    <title>RabiteBank</title>
+    {% endblock %}
+            {% block content %}
+        <div class="container-fluid">
+            <div class="main-base">
+                <section id="main-slider-box">
+                <div class="slick-slider">
+                    <div class="slide">
+                        <div class="main-slider">
+                            <div class="main-slider-content">
+                                <h3>Nağd pul krediti üzrə kampaniya</h3> 
+                                <p>Krediti düz 12-dən vur!</p> 
+                                <ul class="buttons">
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Daha ətraflı</a></li>
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Sifariş et</a></li> 
+                                </ul>
+                            </div>
+                            <img src="{{url_for('static', filename='images/slider_image-1.webp')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="main-slider">
+                            <div class="main-slider-content">
+                                <h3>Nağd pul krediti üzrə kampaniya</h3> 
+                                <p>Krediti düz 12-dən vur!</p> 
+                                <ul class="buttons">
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Daha ətraflı</a></li>
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Sifariş et</a></li> 
+                                </ul>
+                            </div>
+                            <img src="{{url_for('static', filename='images/slider_image-2.webp')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="main-slider">
+                            <div class="main-slider-content">
+                                <h3>Nağd pul krediti üzrə kampaniya</h3> 
+                                <p>Krediti düz 12-dən vur!</p> 
+                                <ul class="buttons">
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Daha ətraflı</a></li>
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Sifariş et</a></li> 
+                                </ul>
+                            </div>
+                            <img src="{{url_for('static', filename='images/slider_image-3.webp')}}" alt="">
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="main-slider">
+                            <div class="main-slider-content">
+                                <h3>Nağd pul krediti üzrə kampaniya</h3> 
+                                <p>Krediti düz 12-dən vur!</p> 
+                                <ul class="buttons">
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Daha ətraflı</a></li>
+                                    <li><a href="#" title="Nağd pul krediti üzrə kampaniya">Sifariş et</a></li> 
+                                </ul>
+                            </div>
+                            <img src="{{url_for('static', filename='images/slider_image-4.webp')}}" alt="">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="main-product-list-section">
+                <div class="container">
+                <div class="main-products">
+                    <ul class="main-product-list">
+                        <li>
+                            <img src="{{url_for('static', filename='images/group-362x.webp')}}" alt="Fərdi kreditlər" title="Fərdi kreditlər" width="102"> 
+                            <h4>Fərdi kreditlər</h4> 
+                            <p> <strong>12%</strong> <br> -dən başlayaraq </p> 
+                            <a href="https://www.rabitabank.com/ferdi-kreditler" title="Fərdi kreditlər">Sifariş et →</a> 
+                        </li>
+                        <li>
+                            <img src="{{url_for('static', filename='images/product_list-2.webp')}}" alt="Fərdi kreditlər" title="Fərdi kreditlər" width="102"> 
+                            <h4>Kartmane Debet</h4> 
+                            <p> <strong>40%</strong> <br> -dək cashback imkanı </p> 
+                            <a href="https://www.rabitabank.com/ferdi-kreditler" title="Fərdi kreditlər">Sifariş et →</a> 
+                        </li>
+                        <li>
+                            <img src="{{url_for('static', filename='images/product_list-3.webp')}}" alt="Fərdi kreditlər" title="Fərdi kreditlər" width="102"> 
+                            <h4>Fərdi Əmanətlər</h4> 
+                            <p> <strong>10.50%</strong> <br> -dək illik gəlir </p> 
+                            <a href="https://www.rabitabank.com/ferdi-kreditler" title="Fərdi kreditlər">Sifariş et →</a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+            <section class="mobile_slide_section">
+                <div class="slick-slider">
+                    <div class="mobile-slide">
+                        <div class="mobile-slide-items">
+                        <div class="mobile-slider-content">
+                            <h4>Rabita Mobile</h4> 
+                            <p>Rabita Mobile ilə banka getməyə ehtiyac yoxdur, bankınız hər zaman yanınızdadır!</p> 
+                            <a href="https://www.rabitabank.com/rabita-mobile-2" title="Rabita Mobile" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                        </div>
+                        <img src="{{url_for('static', filename='images/mobile-slide-1.webp')}}" title="Rabita Mobile" alt="Rabita Mobile" class="m_slide_img">
+                    </div>
+
+                    </div>
+                    <div class="mobile-slide">
+                        <div class="mobile-slide-items">
+                        <div class="mobile-slider-content">
+                            <h4>RabitaBot</h4> 
+                            <p>Azərbaycanın ilk maliyyə çatbotu</p> 
+                            <a href="https://www.rabitabank.com/rabita-mobile-2" title="Rabita Mobile" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                        </div>
+                        <img src="{{url_for('static', filename='images/mobile-slide-2.webp')}}" title="Rabita Mobile" alt="Rabita Mobile" class="m_slide_img">
+                    </div>    
+                    </div>
+                    <div class="mobile-slide">
+                        <div class="mobile-slide-items">
+                        <div class="mobile-slider-content">
+                            <h4>İnternet Bankçılıq</h4> 
+                            <p>Hesablarınızı idarə etmək rahatdır!</p> 
+                            <a href="https://www.rabitabank.com/rabita-mobile-2" title="Rabita Mobile" target="_blank" class="read_more_s_btn " tabindex="-1">Daha ətraflı</a>
+                        </div>
+                        <img src="{{url_for('static', filename='images/mobile-slide-3.webp')}}" title="Rabita Mobile" alt="Rabita Mobile" class="m_slide_img">
+                    </div>    
+                    </div>
+                </div>
+            </section>
+            <section class="main-special-offers-section">
+                <div class="container">
+                <div class="main-special-offers-box">
+                    <ul class="main-special-offers-list">
+                        <li> 
+                            <a href="#" title="Kartmane" class="full full_h"> 
+                                <img src="{{url_for('static', filename='images/special-offer-1.webp')}}" alt="Kartmane" title="Kartmane"> 
+                                <div class="special_offer_bottom"> 
+                                    <p class="offer_name">Kartmane</p> 
+                                    <h4>“Kartmane”&nbsp;ilə üstünlüklərlə yaşa</h4> 
+                                    <p>"Kartmane"nin üstünlükləri ilə yaşayın <br> </p> 
+                                </div> 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#" title="Kartmane" class="full full_h"> 
+                                <img src="{{url_for('static', filename='images/special-offer-2.webp')}}" alt="Kartmane" title="Kartmane"> 
+                                <div class="special_offer_bottom"> 
+                                    <p class="offer_name">Biznes</p> 
+                                    <h4>Kənd Təsərrüfatı kreditləri</h4> 
+                                    <p>Kənd təsərrüfatı kreditləri ilə
+                                        işinizə dəyər qatın <br> </p> 
+                                </div> 
+                            </a> 
+                        </li>
+                        <li> 
+                            <a href="#" class="full full_h"> 
+                                <img src="{{url_for('static', filename='images/special-offer-3.webp')}}" alt="Kartmane" title="Kartmane"> 
+                                <div class="special_offer_bottom"> 
+                                    <p class="offer_name">RABİTABOT</p> 
+                                    <h4>Dostlarınla hesabı alman üsulu böl! </h4> 
+                                    <p>RabitaBot ilə hesabı dostların arasında
+                                        rahatlıqla bölə bilərsiniz <br> </p> 
+                                </div> 
+                            </a> 
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            </section>
+            <section class="main-calc-section">
+                <div class="container">
+                    <div class="inner-calc-section">
+                        <h3 class="full section_title">Nağd pul krediti 12%-dən</h3>
+                        <form id="calc-form" method="post">
+                            <ul class="calc-input-list">
+                                <li>
+                                    <span class="calc-title">Müddət (ay)</span>
+                                    <span class="slider-text-path contenteditable" id="month">
+                                        3
+                                    </span>
+                                        <p id="list1">ay</p>
+                                    <div class="calc-slider-range">
+                                        <input type="range" class="form-range" id="customRange1" min="3" max="36" value="3">
+                                    </div>
+                                </li>
+                                <li >
+                                    <span class="calc-title">Kredit məbləği</span>
+                                    <span class="slider-text-path contenteditable text-path2" id="credit">
+                                        10150
+                                    </span>
+                                        <p id="list2">AZN</p>
+                                    <div class="calc-slider-range">
+                                        <input type="range" class="form-range" id="customRange2" min="300" max="20000" value="10150" step="100">
+                                    </div>
+                                </li>
+                                <li >
+                                    <span class="calc-title">Faiz dərəcəsi (illik)</span>
+                                    <span class="slider-text-path contenteditable text-path3" id="percent">
+                                        12
+                                    </span>
+                                        <p id="list3">%</p>
+                                    <div class="calc-slider-range">
+                                        <input type="range" class="form-range" id="customRange3" min="12" max="30" value="12">
+                                    </div>
+                                </li>
+                            </ul>
+                            <div class="calc-info-box">
+                                <ul class="calc-result-list">
+                                    <li>
+                                        <h5>Ümumi məbləğ</h5>
+                                        <p id="total-credit">
+                                            10353.00
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Faiz məbləği</h5>
+                                        <p id="credit_last_percent">
+                                            10353.00
+                                        </p>
+                                    </li>
+                                    <li>
+                                        <h5>Aylıq ödəniş</h5>
+                                        <p id="monthly_payment">
+                                            10353.00
+                                        </p>
+                                    </li>
+                                    
+                                    
+                                </ul>
+                                <a href="#" class="calc_btn calc_order_now flex order_now_link">Sifariş et →</a> 
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <section class="currency-exchange">
+                <div class="container">
+                <div class="inner-currency-exchange">
+                    <div class="currency-exchange-left-side">
+                        <ul class="currency-exchange-list">
+                            <li>
+                                <h3>Valyuta</h3>
+                                <ul class="inner-exchange-list">
+                                    <!-- <li>
+                                        GBP
+                                    </li> -->
+                                    <li>
+                                        EUR
+                                    </li>
+                                    <li>
+                                        USD
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Alis</h3>
+                                <ul class="inner-exchange-list">
+                                    <!-- <li>
+                                        GBP
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </li> -->
+                                    <li id="euro_get">
+                                        {{eur_get}}
+                                        <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                    </li>
+                                    <li id="usd_get"> 
+                                        {{usd_get}}
+                                        <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <h3>Satis</h3>
+                                <ul class="inner-exchange-list">
+                                    <!-- <li>
+                                        GBP
+                                        <i class="fa-solid fa-arrow-down"></i>
+                                    </li> -->
+                                    <li id="euro_sale">
+                                        {{eur_sales}}
+                                        <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                    </li>
+                                    <li id="usd_sale">
+                                        {{usd_sales}}
+                                        <!-- <i class="fa-solid fa-arrow-down"></i> -->
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <div id="curr-update-box" class="curr-update-box">
+                            <p class="curr-update-info">
+                                Yeniləndi: <span>{{time}}</span>
+                            </p>
+                            <p class="additional-info">
+                                <i class="fa-solid fa-circle-info"></i>
+                                Hal-hazırda bankımızda müvəqqəti olaraq rus rublunun nağd alışı və satışı həyata keçirilmir.
+                            </p>
+                        </div>
+                    </div>
+                    <form method="post">
+                        <div class="currency-exchange-right-side">
+                            <div class="exchange-convert-title">
+                                <h3 class="money-convert-title">Valyuta kalkluyatoru</h3>
+                                <ul class="calc-type-list">
+                                    <li>
+                                        <select class="type-choice">
+                                            <option value="1" selected>Nağd</option>
+                                            <!-- <option value="2">Nağdsız</option> -->
+                                        </select>
+                                    </li>
+                                    <li>
+                                        <select class="type-choice" id="getSaleVal" onchange="valueGetSale()">
+                                            <option value="1" selected>Alış</option>
+                                            <option value="2">Satış</option>
+                                        </select>
+                                    </li>
+                                </ul>
+                            </div>
+                            <ul class="money-convert-list">
+                                <li>
+                                    <input type="text" min="1" value="1" class="first-input exchange-input">
+                                    <select class="type-choice" id="exchange_value_val"> 
+                                        <!-- <option value="0" selected>₼</option> -->
+                                        <option value="0">€</option>
+                                        <option value="0">$</option>
+                                    </select>
+                                </li>
+                                <li>
+                                    <span class="first-input exchange_value"></span><!--<input type="text" min="1" value="0.46" class="first-input" disabled> -->
+                                    <select class="type-choice">
+                                        <option value="0">₼</option>
+                                        <!-- <option value="0" class="exchange_value_val">€</option>
+                                        <option value="0" class="exchange_value_val">$</option> -->
+                                    </select>
+                                </li>
+                            </ul>
+                        </div>
+                    </form>
+                </div>
+                </div>
+            </section>
+            <section class="main-news">
+                <div class="container">
+                    <div class="main-news-title">
+                        <h4>Xəbərlər və Elanlar</h4>
+                        <a href="/xeberler">Daha çox</a>
+                    </div>
+                    <ul class="main-news-list">
+                        {% for news in news_list %}
+                        <li>
+                            <a href="/xeber/{{news.id}}" title="{{news.title}}"> 
+                                <span>{{news.share_date}}</span> 
+                                <h4>{{news.title}}</h4>
+                            </a>
+                        </li>
+                        {% endfor %}
+                        
+                    </ul>
+                </div>
+            </section>
+            </div>
+        </div>
+        {% endblock %}

@@ -1,0 +1,15 @@
+{% macro render_field(field) %}
+    <div class="col-lg-6">
+      
+        {{ field(class="form-control")}}
+    
+  {% if field.errors %}
+    <ul class=errors>
+    {% for error in field.errors %}
+      <li>{{ error }}</li>
+    {% endfor %}
+    </ul>
+  {% endif %}
+
+  </div>
+{% endmacro %}

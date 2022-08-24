@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <title>Rabitəbank</title> -->
+    <link rel="stylesheet" href="{{url_for('static', filename='css/reset.css')}}">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='slick-1.8.1/slick/slick.css')}}" />
+    <!-- /static/slick-1.8.1/slick/slick.css -->
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='slick-1.8.1/slick/slick-theme.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static', filename='css/style.css')}}">
+    {% block css %}
+    {% endblock %}
+</head>
+
+<body>
+
+    <header id="main-header">
+        <div id="header-container" class="container">
+            <div class="row">
+                <div class="col-lg-12 main-top-header">
+                    <div class="main-header-top-left">
+                        <a href="/" class="main-logo"><img src="/static/images/rabite_new_logo.svg" alt=""></a>
+                        <ul class="ferdi_bizness">
+                            <li>
+                                <a href="#" class="main-active">Fərdi</a>
+                            </li>
+                            <li>
+                                <a href="#" class="main-inactive">/Bizness</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="main-header-top-right">
+                        <div class="main-search-box">
+                            <form method="POST" action="{{url_for('search_result_page')}}" class="form-height-full">
+                                {{ form.hidden_tag() }}
+                                <input type="text" placeholder="Axtarış..." class="main-search focused" name="searched">
+                                <button type="button" class="main-search-btn">
+                                    <i class="fa-solid fa-magnifying-glass main-search-logo fa-xl"></i>
+                                </button>
+                            </form>
+                        </div>
+                        <ul class="main-header-top-right-menu">
+                            <li>
+                                <a href="#">İnternet bankçılıq →</a>
+                            </li>
+                            <li>
+                                <a href="#" class="call_133"><i class="fa-solid fa-phone-volume"></i>133</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-12 main-bottom-header">
+                    <ul class="main-bottom-menu">
+                        <li><a href="#" title="Kreditlər" class="">Kreditlər</a></li>
+                        <li><a href="/amanat" title="Əmanətlər" class="{% if page == 'amanat' %}page_active{% endif %}">Əmanətlər</a></li>
+                        <li><a href="#" title="Kartmane" class="">Kartmane</a></li>
+                        <li><a href="#" title="Onlayn Xidmətlər" class="">Onlayn Xidmətlər</a></li>
+                        <li><a href="#" title="Digər xidmətlər" class="">Digər xidmətlər</a></li>
+                        <li><a href="/company" title="Kampaniyalar" class="{% if page == 'company' %}page_active{% endif %}">Kampaniyalar</a></li>
+                        <li><a href="#" title="Xidmət Şəbəkəsi" class="">Xidmət Şəbəkəsi</a></li>
+                        <li><a href="#" title="Tərəfdaşlar" class="">Tərəfdaşlar</a></li>
+                        <li><a href="/onlayn-novbe" title="Onlayn növbə" class="{% if page == 'online_turn'  %}page_active{%endif%}">Onlayn növbə</a></li>
+                    </ul>
+                    <ul class="main-language-switcher">
+                        <li>en</li>
+                        <li>ru</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    {% block content %}
+    {% endblock %}
+
+
+
+    <div class="footer-parent-div">
+        <footer class="footer container-fluid px-4">
+            <div class="d-flex py-2  justify-content-between border border-1 border-end-0 border-top-0 border-start-0 border-secondary">
+                <div class="footer-img">
+                    <a href="#">
+                        <img src="https://www.rabitabank.com/assets/images/rabite_new_logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="footer-num">
+                    <a class="text-secondary text-decoration-none fw-bold fs-2" href="#"><i class="bi bi-telephone-forward-fill fs-4"></i> 133</a>
+                </div>
+            </div>
+            <div class="d-flex py-2  justify-content-around fw-bold fs-4 footer-links border border-1 border-end-0 border-top-0 border-start-0 border-secondary">
+                <div class="col-md-4">
+                    <p><a href="#">Fərdi müştərilər</a></p>
+                    <p><a href="#">İnsan resursları</a></p>
+                </div>
+                <div class="col-md-4">
+                    <p><a href="#">Biznes müştərilər</a></p>
+                    <p><a href="#">İnvestorlarla əlaqə</a></p>
+                </div>
+                <div class = "col-md-4">
+                    <p><a href="#">Bank haqqında</a></p>
+                </div>
+            </div>
+            <div class="py-2 fs-5 footer-links border border-1 border-end-0 border-top-0 border-start-0 border-secondary">
+                <h2 class="fw-bold">Baş Ofis</h2>
+                <div class="d-flex justify-content-around">    
+                    <div class="col-md-4 px-1">
+                        <p>Azərbaycan, Bakı şəh., AZ 1010, 28 May küç. 33</p>
+                    </div>
+                    <div class="col-md-4 px-1">
+                        <p>Tel.: (994 12) 598 44 88</p>
+                        <p>Faks: (994 12) 497 11 01</p>
+                    </div>
+                    <div class = "col-md-4 px-1">
+                        <p>
+                            Teleks: 142453 RSKBAI133@rabitabank.com Zəng sifarişi
+                        </p>
+                    </div>
+    
+                </div>
+                <div class="d-flex flex-wrap justify-content-start">
+                    <div>
+                        <a href=""><img src="https://www.rabitabank.com/assets/images/infobank-v-2@2x.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href=""><img src="https://www.rabitabank.com/assets/images/msp.png" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="footer-store-icon d-flex justify-content-between">
+                                <div class="footer-store-label">
+                                    <i class="bi bi-apple"></i>
+                                </div>
+                                <div class="footer-store-text">
+                                    <p>Dowload on the <br>App Store</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <div class="footer-store-icon d-flex justify-content-between">
+                                <div class="footer-store-label">
+                                    <i class="bi bi-google"></i>
+                                </div>
+                                <div class="footer-store-text">
+                                    <p>Get it on the <br>Play Store</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="d-flex py-2  justify-content-between">
+                    <div col="col-md-6">
+                        <p class="fs-5 footer-end-text">
+                            Rabitəbank ASC Azərbaycan Mərkəzi Bankın 136 saylı lisenziyası
+                            əsasında fəaliyyət göstərir. © Rabitəbank 2022
+                        </p>
+                    </div>
+                    <div class ="col-md-6">
+                        <ul class="footer-soc-list d-flex justify-content-around fs-1">
+                            <li><a href="#"><i class="bi bi-facebook"></i></a></li>
+                            <li><a href="#"><i class="bi bi-twitter"></i></a></li>
+                            <li><a href="#"><i class="bi bi-instagram"></i></a></li>
+                            <li><a href="#"><i class="bi bi-youtube"></i></a></li>
+                            <li><a href="#"><i class="bi bi-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+        </footer>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"
+        integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="{{url_for('static', filename='slick-1.8.1/slick/slick.min.js')}}"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+        crossorigin="anonymous"></script>
+    <script src="{{url_for('static', filename='js/app.js')}}"></script>
+    <script>
+        $(document).ready(function () {
+            $('.slick-slider').slick({
+                dots: true,
+                autoplay: true,
+                arrows: false,
+                infinite: true,
+                speed: 400,
+                cssEase: 'linear'
+            });
+        });
+    </script>
+    {% block js %}
+    {% endblock %}
+</body>
+
+</html>

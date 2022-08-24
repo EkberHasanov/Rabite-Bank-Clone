@@ -1,0 +1,104 @@
+{% extends 'base.html'%}
+{%block css%}
+    <title>Kart Sifarişi</title>
+{%endblock%}
+
+{% block content%}
+    <main class="order">
+        <div class="order-top">
+            <div>
+                <div>
+                    <h3>Kart Sifarişi</h3>
+                    <p>Kartmane Debet, Kredit və Premium kartlarını buradan sifariş edə bilərsiniz.</p>
+                </div>
+             </div>
+            
+            <div>
+                <img src="https://www.rabitabank.com/uploads/posts/2021/02/kartmanevisadb.png" alt="">
+            </div>
+        </div>
+        <div>
+            <div>
+                <form action="">
+                    <div class="order-form">
+                        <h4>Onlayn sifariş</h4>
+                        <div class="order-form-content">
+                            <div>
+                                <p>
+                                <select name="" id="">
+                                    <option selected disabled value="">Kartı seçin</option>
+                                    <option value="">Exim Kartı</option>
+                                    <option value="">Kartmane Debet</option>
+                                </select>
+                                </p>
+                                
+                                <p>
+                                    <select name="" id="">
+                                        <option selected disabled value="">Valyuta</option>
+                                        <option value="">AZN</option>
+                                        <option value="">USD</option>
+                                        <option value="">EUR</option>
+                                    </select>
+                                </p>
+
+
+                                <p>
+                                    <select name="" id="">
+                                        <option selected disabled value="">Filial</option>
+                                        <option value="">Baş ofis</option>
+                                        <option value="">Buta</option>
+                                        <option value="">Kaspian ofis</option>
+                                    </select>
+                                </p>
+
+                                <p>
+                                    <input type="text" placeholder="Soyad">
+                                </p>
+                                
+                                <p>
+                                    <input type="file" placeholder="Şəxsiyyət vəsiqənizin arxa üzü"> 
+                                </p>
+
+                                <p>
+                                    <input type="text" placeholder="Email"> 
+                                </p>
+                                <p class="order-note"><b> Qeyd:</b> Bakı və Sumqayıt filiallarında yalnız çatdırılma və ya E-manat terminalı vasitəsi ilə kart sifarişi qəbul edilir. Digər rayon filiallarında yalnız E-manat terminalı vasitəsi sifariş mümkündür. Əks halda sifariş qəbul olunmayacaq.</p>
+                            </div>
+                            <div>
+                                <p>
+                                <select name="" id="">
+                                    <option selected  value="">Mastercard</option>
+                                    <option value="">Visa</option>
+                                </select>
+                                </p>
+
+                                <p>
+                                    <select name="" id="">
+                                        <option disabled selected  value="">Kartın müddəti</option>
+                                        <option value="">5 il</option>
+                                    </select>
+                                    </p>
+
+                                <p>
+                                    <input type="text" placeholder="Ad">
+                                </p>
+
+                                <p>
+                                    <input type="file" placeholder="Şəxsiyyət vəsiqənizin üzü"> 
+                                </p>
+
+                                <p>
+                                    <input type="text" placeholder="Mobil Nömrə"> 
+                                </p>
+                            </div>
+                        </div>
+                        <div class="order-form-end">
+                            <p>QEYD: Bankdaxili qaydalar əsasında “Öz müştərini tanı” prinsipinə əsasən müştəri ilə işgüzar münasibətlər yalnız müştərinin tam və əhatəli eyniləşdirilməsi və verifikasiyasından sonra yaradılır və daim yenilənir. Bu məqsədlə hər bir müştərinin həqiqi kimliyini təyin etməyə və hər bir müştəri kateqoriyasına məxsus riskləri qiymətləndirməyə imkan verən müvafiq eyniləşdirmə və verifikasiya standartları müəyyən edilmişdir. Qeyd olunanlara əsasən, xidmətlərimizdən ilk dəfə istifadə edən müştərilər yalnız şəxsən iştirak etməklə hesab aça və bununla əlaqədar müqavilə bağlaya, habelə müvafiq plastik kartı təhvil ala bilərlər. Bankımızın artıq müştərisi olan şəxslər qeyd edilən əməliyyatları həmin əməliyyatların həyata keçirilməsi üçün səlahiyyətləri qeyd edilən müvafiq qaydada təsdiq edilmiş etibarnamələr əsasında nümayəndələri vasitəsilə həyata keçirə bilərlər.</p>
+                            <p><button type="submit">sifariş et</button></p>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </main>
+{% endblock %}

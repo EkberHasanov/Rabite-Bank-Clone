@@ -1,0 +1,165 @@
+{% extends "base.html" %}
+    {% block content %}
+    <main class="amanat">
+        <div class="amanat-top">
+            <div>
+                <h2>Fərdi Əmanətlər</h2>
+            </div>
+            <div>
+                    <img src="https://www.rabitabank.com/uploads/posts/2019/11/00034.png" alt="">
+            </div>
+        </div>
+
+
+
+        <div class="amanat-cards">
+            <div class="amanat-card">
+                <div class="amanat-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/06/universal%20amanat%20kampaniya.png" alt="">
+                </div>
+                <div class="amanat-card-content">
+                    <h3>Universal Əmanət</h3>
+                    <div class="amanat-card-info">
+                        <div>
+                            <p>Müddət:</p>
+                            <p>36 ayadək</p>
+                        </div>
+                        <div>
+                            <p>Faiz dərəcəsi:</p>
+                            <p>10.50 %-dək</p>
+                        </div>
+                    </div>
+                    <div class="amanat-card-button">
+                        <a href="#"><button>Daha ətraflı</button></a>
+                    </div>
+                </div>
+            </div>
+            
+
+            <div class="amanat-card">
+                <div class="amanat-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2019/11/Ushaq2.jpg" alt="">
+                </div>
+                <div class="amanat-card-content">
+                    <h3>Uşaq yığım əmanəti</h3>
+                    <div class="amanat-card-info">
+                        <div>
+                            <p>Müddət:</p>
+                            <p>216 ayadək</p>
+                        </div>
+                        <div>
+                            <p>Faiz dərəcəsi:</p>
+                            <p>5 %-dək</p>
+                        </div>
+                    </div>
+                    <div class="amanat-card-button">
+                        <a href="#"><button>Daha ətraflı</button></a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="amanat-card">
+                <div class="amanat-card-img">
+                    <img src="https://www.rabitabank.com/uploads/posts/2021/01/Depoztariy.jpg" alt="">
+                </div>
+                <div class="amanat-card-content">
+                    <h3>Saxlanc seyfləri</h3>
+                    <div class="amanat-card-info">
+                        
+                    </div>
+                    <div class="amanat-card-button">
+                        <a href="#"><button>Daha ətraflı</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <form action="#" method="post">
+                <div class="amanat-form">
+                    <h3>
+                        Onlayn sifariş
+                    </h3>
+                    <div class="amanat-form-input">
+                        <input class="form" type="text" placeholder="adınız">
+                        <input type="text" placeholder="soyadınız">
+                    </div>
+                    <div class="amanat-form-input">
+                        <select name="" id="">
+                            <option selected disabled value="">Əmanət növünü seçin</option>
+                            <option value="">Universal Əmanət</option>
+                            <option value="">Uşaq Yığım Əmanəti</option>
+                            <option value="">Saxlanc seyfləri</option>
+                        </select>
+
+                        <input type="text" placeholder="əlaqə nömrəsi">
+                        <div class="amanat-line"></div>
+                    </div>
+                    <div class="amanat-form-button">
+                        <button type="submit">Davam et</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div>
+            <div class="amanat-coursel">
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>Rabita Mobile</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/11.png" alt="">
+                    </div>    
+                </div>
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>RabitaBot</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/33.png" alt="">
+                    </div>    
+                </div>
+                <div class="amanat-coursel-content">
+                    <div class="amanat-coursel-text">
+                        <div>
+                            <h2>Rabita Banking</h2>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, autem.</p>
+                            <p><a href=""><button class="">Davam et</button></a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="amanat-coursel-img">
+                        <img src="https://www.rabitabank.com/uploads/posts/2021/04/22.png" alt="">
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+    </main>
+    {% endblock %}
+    
+    {% block js %}
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="../static/slick/slick.min.js"></script>
+    
+    <script>
+        $('.amanat-coursel').slick({
+            dots: true,
+            infinite: true,
+            speed: 500,
+            slidesToShow: 1,
+            autoplay: true,
+            autoplaySpeed: 3000,
+            adaptiveHeight: true,
+            pauseOnHover: false
+          });
+    </script>
+    {% endblock %}
